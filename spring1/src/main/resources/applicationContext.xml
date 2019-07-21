@@ -22,5 +22,16 @@
         <property name="message" value="Hellllo :)"></property>
     </bean>
 
+    <bean id="zadanie4"   abstract="true">
+        <property name="message1" value="Heello word template1"></property>
+        <property name="message2" value="Heello word template2"></property>
+        <property name="message3" value="Heello word template3"></property>
+    </bean>
+
+    <bean id="beanForTemplate" class="Spring.BeanForTemplate" parent="zadanie4">
+        <property name="message1" value="Zmieniamy tekst"></property>
+        <property name="message2" value="opis">           </property>
+    </bean>
+
 </beans>
 

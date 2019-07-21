@@ -37,6 +37,14 @@ public class SimpleHelloWorld {
         System.out.println("springSingleton = " + springSingleton1.getZmA());
         System.out.println("springSingleton = " + springSingleton.getZmA());
 
+        BeanForTemplate beanForTemplate = (BeanForTemplate) context.getBean("beanForTemplate");
+
+        System.err.println(beanForTemplate.getMessage1());
+        System.out.printf("message 2 ", beanForTemplate.getMessage2());
+        System.out.println("beanForTemplate.getMessage3() = " + beanForTemplate.getMessage3());
+        System.out.printf("sss " , beanForTemplate.getMessage2());
+
+
         InitDestroyBean initDestroyBean = (InitDestroyBean) context.getBean("initDestroy");
 
         context.close();
