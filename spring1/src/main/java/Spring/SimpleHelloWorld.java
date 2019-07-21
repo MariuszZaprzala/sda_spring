@@ -25,5 +25,7 @@ public class SimpleHelloWorld {
         System.out.println("z2 = " + z2);
         System.out.println(z1);
 
+        System.out.println("z1 = " + z1.getZmienna1());
+
     }
 }
