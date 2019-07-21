@@ -14,5 +14,9 @@
         <property name="zmienna2" value="2"/>
     </bean>
 
+    <bean id="singleton" class="Spring.SpringSingleton" scope="singleton">
+
+    </bean>
+
 </beans>
 

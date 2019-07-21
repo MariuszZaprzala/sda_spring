@@ -27,5 +27,15 @@ public class SimpleHelloWorld {
 
         System.out.println("z1 = " + z1.getZmienna1());
 
+        SpringSingleton springSingleton = (SpringSingleton) context.getBean("singleton");
+
+        springSingleton.setZmA(3);
+        System.out.println("springSingleton = " + springSingleton.getZmA());
+
+        SpringSingleton springSingleton1 = (SpringSingleton) context.getBean("singleton");
+        springSingleton1.setZmA(0);
+        System.out.println("springSingleton = " + springSingleton1.getZmA());
+        System.out.println("springSingleton = " + springSingleton.getZmA());
+
     }
 }
