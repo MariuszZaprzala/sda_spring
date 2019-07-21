@@ -5,7 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class SimpleHelloWorld {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         HelloWorld obj = (HelloWorld) context.getBean("helloWorld");
         obj.setMessage("first object");
         obj.getMessage();
@@ -36,6 +36,10 @@ public class SimpleHelloWorld {
         springSingleton1.setZmA(0);
         System.out.println("springSingleton = " + springSingleton1.getZmA());
         System.out.println("springSingleton = " + springSingleton.getZmA());
+
+        InitDestroyBean initDestroyBean = (InitDestroyBean) context.getBean("initDestroy");
+
+        context.close();
 
     }
 }

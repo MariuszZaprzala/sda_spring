@@ -18,5 +18,9 @@
 
     </bean>
 
+    <bean id="initDestroy" class="Spring.InitDestroyBean" init-method="init" destroy-method="destroy">
+        <property name="message" value="Hellllo :)"></property>
+    </bean>
+
 </beans>
 
