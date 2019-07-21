@@ -33,5 +33,19 @@
         <property name="message2" value="opis">           </property>
     </bean>
 
+    <bean id="komputer" class="Spring.Komputer">
+        <property name="procesor" >
+            <bean id="procesor" class="Spring.Procesor"></bean>
+        </property>
+    </bean>
+
+    <bean id="car" class="Spring.Car">
+        <constructor-arg index="0" ref="engin"></constructor-arg>
+    </bean>
+
+    <bean id="engin" class="Spring.Engine">
+
+    </bean>
+
 </beans>
 
