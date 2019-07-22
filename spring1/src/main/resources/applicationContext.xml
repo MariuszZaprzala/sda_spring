@@ -47,5 +47,32 @@
 
     </bean>
 
+    <bean id="collections" class="Spring.Collections">
+        <property name="list1">
+            <list>
+                <value>Pawel</value>
+                <value>Jan</value>
+                <value>Jan</value>
+                <value>Andrzej</value>
+            </list>
+        </property>
+
+        <property name="set1">
+            <set>
+                <value>Marek</value>
+                <value>Anna</value>
+                <value>Adam</value>
+                <value>Michal</value>
+                <value>Adam</value>
+            </set>
+        </property>
+        <property name="map1">
+            <map>
+                <entry key="1" value="Maria"></entry>
+                <entry key="2" value="Michalina"></entry>
+            </map>
+        </property>
+    </bean>
+
 </beans>
 

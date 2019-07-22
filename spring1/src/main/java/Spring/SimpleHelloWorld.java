@@ -55,6 +55,25 @@ public class SimpleHelloWorld {
         car.getPower();
         System.out.println(car.getEngine().getPower() );
 
+        Collections collections = (Collections)context.getBean("collections");
+
+        System.out.println("Set ");
+
+        collections.getList1().forEach(System.out::println);
+
+        System.out.println("Lista ");
+
+        collections.getSet1().forEach(System.out::println);
+
+        System.out.println("Rozmiar kolekcji to: "+collections.getMap1().size());
+
+        for (Integer key: collections.getMap1().keySet()){
+            System.out.println(collections.getMap1().get(key));
+        }
+
+
+         collections.getMap1();
+
 
 
 
